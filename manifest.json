@@ -37,8 +37,10 @@
                     "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
                     "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
                     "<uses-feature android:name=\"android.hardware.camera\"/>",
-                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
-                ]
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>"
+					
+				]
             },
             /* ios打包配置 */
             "ios" : {},
@@ -57,7 +59,10 @@
             "postcss" : true,
             "minified" : true
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "optimization" : {
+            "subPackages" : true
+        }
     },
     "mp-alipay" : {
         "usingComponents" : true
@@ -71,5 +76,14 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "2"
+    "vueVersion" : "2",
+    "h5" : {
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "DKEBZ-DYNC3-ET73A-YX5ZW-AT5HQ-VNBZP"
+                }
+            }
+        }
+    }
 }

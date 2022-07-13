@@ -20,7 +20,7 @@
             "path" : "pages/member/member",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "我的会员",
                 "enablePullDownRefresh": false
             }
             
@@ -29,7 +29,34 @@
             "path" : "pages/news/news",
             "style" :                                                                                    
             {
+                "navigationBarTitleText": "资讯列表",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/goods_list/goods_list",
+            "style" :                                                                                    
+            {
                 "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "资讯详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/gooddetail/gooddetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品详情",
                 "enablePullDownRefresh": false
             }
             
@@ -72,5 +99,50 @@
 			}
 			
 		]
-	}
+	},
+	"subPackages": [
+		{
+			"root": "subpages",
+			"pages": [
+			    {
+                    "path" : "goods/goods",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "商品列表",
+                    "enablePullDownRefresh": true
+					
+                }
+                
+                },
+                {
+                    "path" : "contact/contact",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "联系我们",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                
+                ,{
+                    "path" : "pics/pics",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "社区图片",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "videos/videos",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "推荐商品",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		}
+	]
 }
